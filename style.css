@@ -1,4 +1,47 @@
+:root {
+}
+
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
+}
+
+.body {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.header {
+}
+
+.sidebar {
+  background-color: #d97706;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  color: white;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tabs li {
+  margin: 1rem;
+}
+
+.settings {
+}
+
+.settings li {
+  margin: 1rem;
+}
+
+.main-content {
+  background-color: #ececec;
 }
