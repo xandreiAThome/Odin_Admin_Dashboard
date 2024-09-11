@@ -18,8 +18,86 @@ body {
   grid-template-columns: 2fr 1fr;
 }
 
-.search-bar img {
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container img {
   width: 2rem;
+  margin-left: 3rem;
+}
+
+.search-bar {
+  height: 2rem;
+  background-color: rgb(202, 202, 202);
+  flex: 1;
+  margin: 1rem 6rem 1rem 1rem;
+  border-radius: 1rem;
+  min-width: 200px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile * {
+  margin-right: 2rem;
+}
+
+.profile-pic {
+  border-radius: 3rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.notif {
+  width: 2rem;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+}
+
+.greeting img {
+  width: 5rem;
+  border-radius: 5rem;
+  margin-left: 3rem;
+  margin-right: 2rem;
+}
+
+.greeting-text h2 {
+  margin: 0;
+}
+
+.greeting h4 {
+  margin: 0 0 10px 0;
+}
+
+.action-buttons {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-buttons button {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #7695ff;
+  color: white;
+  height: 3rem;
+  width: 7rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.projects {
+  height: 700px;
 }
 
 .sidebar {
@@ -74,5 +152,6 @@ body {
 }
 
 .main-content {
-  background-color: #9dbdff;
+  background-color: #eaeaea;
+  box-shadow: inset rgba(0, 0, 0, 0.35) 0px 1px 5px;
 }
