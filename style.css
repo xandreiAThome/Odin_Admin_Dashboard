@@ -31,7 +31,8 @@ body {
 
 .search-bar {
   height: 2rem;
-  background-color: rgb(202, 202, 202);
+  background-color: #eaeaea;
+  border: 1px solid #bebebe;
   flex: 1;
   margin: 1rem 6rem 1rem 1rem;
   border-radius: 1rem;
