@@ -61,10 +61,11 @@ body {
 .greeting {
   display: flex;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
 .greeting img {
-  width: 5rem;
+  width: 4rem;
   border-radius: 5rem;
   margin-left: 3rem;
   margin-right: 2rem;
@@ -227,4 +228,8 @@ hr {
 
 .user-desc {
   color: #6e6e6e;
+}
+
+.username {
+  font-weight: 500;
 }
