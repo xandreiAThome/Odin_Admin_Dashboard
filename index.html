@@ -10,10 +10,16 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="app.js" defer></script>
     <title>Admin Dashboard</title>
   </head>
   <body>
     <div class="body">
+      <input type="checkbox" id="check" />
+      <label for="check">
+        <i id="open"></i>
+        <i id="cancel"></i>
+      </label>
       <header class="header">
         <div class="top-header">
           <div class="search-container">
@@ -109,8 +115,23 @@
           <div class="projects-container">
             <div class="project">
               <h3>Etch A Sketch</h3>
-              <img src="assets/etch.png" alt="" />
-              <p>A simple drawing website</p>
+              <a
+                class="proj-pic"
+                href="https://xandreiathome.github.io/Etch-a-Sketch/"
+                ><img src="assets/etch.png" alt=""
+              /></a>
+              <p>A simple drawing website using vanillaJS, HTML, and CSS</p>
+
+              <a
+                class="link"
+                href="https://xandreiathome.github.io/Etch-a-Sketch/"
+                ><img src="assets/web.svg" alt=""
+              /></a>
+              <a
+                class="github"
+                href="https://github.com/xandreiAThome/Etch-a-Sketch"
+                ><img src="assets/github.svg" alt=""
+              /></a>
             </div>
             <div class="project"></div>
             <div class="project"></div>
