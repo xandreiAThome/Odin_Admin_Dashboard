@@ -1,5 +1,6 @@
 :root {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -15,13 +16,25 @@ body {
 }
 
 .header {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-header {
+  flex: 1;
+  display: flex;
+}
+
+.bot-header {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .search-container {
   display: flex;
   align-items: center;
+  flex: 4;
 }
 
 .search-container img {
@@ -34,15 +47,19 @@ body {
   background-color: #eaeaea;
   border: 1px solid #bebebe;
   flex: 1;
-  margin: 1rem 6rem 1rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: clamp(1rem, 5vw, 6rem);
   border-radius: 1rem;
-  min-width: 200px;
+  min-width: 100px;
 }
 
 .profile {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 1;
 }
 
 .profile * {
@@ -63,6 +80,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+  flex: 4;
 }
 
 .greeting img {
@@ -86,6 +104,9 @@ body {
   gap: 2rem;
   align-items: center;
   justify-content: center;
+  flex: 1;
+  padding: 1rem;
+  justify-content: flex-start;
 }
 
 .action-buttons button {
@@ -157,14 +178,14 @@ body {
 .main-content {
   background-color: #eaeaea;
   box-shadow: inset rgba(0, 0, 0, 0.35) 0px 1px 5px;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .projects-grid {
-  grid-row: 1/3;
   padding: 1rem;
   margin: 1rem;
+  flex: 4;
 }
 
 .projects-grid h2 {
@@ -190,22 +211,43 @@ body {
   min-width: 300px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
   border-radius: 1rem;
+  position: relative;
+  padding: 0 1rem 0 1rem;
+}
+
+.project img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+}
+
+.project p {
+  color: #555555;
+}
+
+.project::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 10px 0 #ff9874;
 }
 
 .right-tab {
-  margin: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  flex: 1;
 }
 
 .announcement {
   min-width: 300px;
   padding: 1rem;
-}
-
-.announcement h3 {
-  margin: 0 0 1rem 0;
 }
 
 .announcement-container {

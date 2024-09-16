@@ -14,28 +14,33 @@
   </head>
   <body>
     <div class="body">
-      <div class="header">
-        <div class="search-container">
-          <img src="assets/magnify.svg" alt="search icon" />
-          <div class="search-bar"></div>
-        </div>
-        <div class="profile">
-          <img src="assets/bell-outline.svg" alt="" class="notif" />
-          <img src="assets/taguro.jpeg" alt="" class="profile-pic" />
-          <h3>xandreiAThome</h3>
-        </div>
-        <div class="greeting">
-          <img src="assets/taguro.jpeg" alt="" />
-          <div class="greeting-text">
-            <h4>Hi there!</h4>
-            <h2>Xander Hamilton (@xandreiAthome)</h2>
+      <header class="header">
+        <div class="top-header">
+          <div class="search-container">
+            <img src="assets/magnify.svg" alt="search icon" />
+            <div class="search-bar"></div>
+          </div>
+          <div class="profile">
+            <img src="assets/bell-outline.svg" alt="" class="notif" />
+            <img src="assets/taguro.jpeg" alt="" class="profile-pic" />
+            <h3>xandreiAThome</h3>
           </div>
         </div>
-        <div class="action-buttons">
-          <button>New</button><button>Upload</button><button>Share</button>
+
+        <div class="bot-header">
+          <div class="greeting">
+            <img src="assets/taguro.jpeg" alt="" />
+            <div class="greeting-text">
+              <h4>Hi there!</h4>
+              <h2>Xander Hamilton (@xandreiAthome)</h2>
+            </div>
+          </div>
+          <div class="action-buttons">
+            <button>New</button><button>Upload</button><button>Share</button>
+          </div>
         </div>
-      </div>
-      <div class="sidebar">
+      </header>
+      <nav class="sidebar">
         <div class="dashboard">
           <img src="assets/view-dashboard.svg" alt="dashboard icon" />Dashboard
         </div>
@@ -97,18 +102,22 @@
             />Privacy
           </li>
         </ul>
-      </div>
-      <div class="main-content">
+      </nav>
+      <main class="main-content">
         <div class="projects-grid">
           <h2>Your Projects</h2>
           <div class="projects-container">
-            <div class="project"></div>
+            <div class="project">
+              <h3>Etch A Sketch</h3>
+              <img src="assets/etch.png" alt="" />
+              <p>A simple drawing website</p>
+            </div>
             <div class="project"></div>
             <div class="project"></div>
             <div class="project"></div>
           </div>
         </div>
-        <div class="right-tab">
+        <section class="right-tab">
           <div class="announcement">
             <h3>Announcements</h3>
             <div class="announcement-container">
@@ -164,8 +173,8 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>
